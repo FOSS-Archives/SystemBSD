@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD polkit Policy Configuration 1.0//EN" "http://www.freedesktop.org/software/polkit/policyconfig-1.dtd">
+
+<policyconfig>
+    <vendor>OpenBSD</vendor>
+    <vendor_url>https://uglyman.kremlin.cc/gitweb/gitweb.cgi?p=systembsd.git</vendor_url> <!-- TODO change or redirect this URL when we rebase -->
+
+    <action id="org.freedesktop.locale1.set-locale">
+        <description>Set system's locale.</description>
+        <message>Setting the system's locale requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+
+    <action id="org.freedesktop.locale1.set-keyboard">
+        <description>Set Xorg keymap.</description>
+        <message>Setting Xorg's keymap requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+</policyconfig>

@@ -1,0 +1,57 @@
+.Dd $Mdocdate$
+.Dt SYSTEMBSD 8
+.Os
+.Sh NAME
+.Nm systembsd
+.Nd systemd compatibility layer
+.\" .Sh SYNOPSIS
+.\" .Nm systembsd
+.Sh DESCRIPTION
+.Nm provides the functionality of hostnamed, localed, timedated and
+(eventually) logind, four systemd daemons.
+.Sh OVERVIEW
+.Nm systembsd emulates the DBus behavior of several afforementioned
+systemd daemons by exposing matching interfaces on the system bus. The
+systembsd executables themselves are run dynamically, as a call to a
+DBus method/property listed in a .service file will cause DBus to
+execute the systembsd binary with proper permissions. The resulting
+proccess, after a period of inactivity, will exit() safely.
+.Pp 
+.Nm systembsd was written to provide compatibility for large codebases
+(e.g. GNOME) that depend on Linux's systemd. Systemd is decidedly
+incompatibile on *BSD systems. Systembsd does not intend to bring
+systemd philosphy or practices to its target platform.
+.Sh HOSTNAMED
+Hostnamed manages setting the system's hostnames, which comprise of the
+dynamic hostname via sethostname(3), the static hostname via
+sethostname(3) and /etc/myname, and the pretty hostname, a UTF-8 string
+contained in /etc/machine-info.
+.Pp
+Hostnamed also handles determining the physical machine's
+characteristics, which it reciprocates through the Chassis and IconName
+properties. IconName is a string following the XDG naming specification
+and is set based off the information from the Chassis property. The
+Chassis property is a string, one of "desktop", "laptop", "server",
+"tablet", "handset", "vm" or "container". Chassis determination involves
+analyzing hwctl, dmesg, and uname output.
+.Pp
+The remaining Kernel* properties and OperatingSystemPrettyName are
+analogous to corresponding uname(3) calls. OperatingSystemCPEName is a
+string following the Common Platform Enumeration specification.
+.Sh LOCALED
+Write this!
+.Sh TIMEDATED
+Write this!
+.Sh LOGIND
+Not implemented yet, work ongoing.
+.Sh FILES
+
+.Sh EXIT STATUS
+.Nm systemd-*d will return 0 on success, 1 on failure.
+.Sh HISTORY
+systembsd was written as a Google Summer of Code project in 2014,
+OpenBSD's first year participating.
+.Br
+Mentored by Antoine Jacoutot and Landry Breuil. 
+.Sh AUTHORS
+.Nm Ian Sutton <ian@kremlin.cc>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD polkit Policy Configuration 1.0//EN" "http://www.freedesktop.org/software/polkit/policyconfig-1.dtd">
+
+<policyconfig>
+    <vendor>OpenBSD</vendor>
+    <vendor_url>https://uglyman.kremlin.cc/gitweb/gitweb.cgi?p=systembsd.git</vendor_url> <!-- TODO change or redirect this URL when we rebase -->
+
+    <action id="org.freedesktop.timedate1.set-time">
+        <description>Set system time.</description>
+        <message>Setting the system time requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+
+    <action id="org.freedesktop.timedate1.set-timezone">
+        <description>Set local timezone.</description>
+        <message>Setting the timezone requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+
+    <action id="org.freedesktop.timedate1.set-local-rtc">
+        <description>Switch RTC between UTC and local time.</description>
+        <message>Switching to the system's real time clock source requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+
+    <action id="org.freedesktop.timedate1.set-ntp">
+        <description>Toggle clock synchronization through NTP.</description>
+        <message>Toggling NTP requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+</policyconfig>

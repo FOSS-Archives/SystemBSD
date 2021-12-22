@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+]>
+<refentry id="gdbus-org.freedesktop.timedate1">
+  <refmeta>    <refentrytitle role="top_of_page" id="gdbus-interface-org-freedesktop-timedate1.top_of_page">org.freedesktop.timedate1</refentrytitle>
+  <indexterm zone="gdbus-interface-org-freedesktop-timedate1.top_of_page"><primary sortas="">org.freedesktop.timedate1</primary></indexterm>
+  </refmeta>  <refnamediv>    <refname>org.freedesktop.timedate1</refname>    <refpurpose></refpurpose>  </refnamediv>  <refsynopsisdiv role="synopsis">
+    <title role="synopsis.title">Methods</title>
+    <synopsis>
+<link linkend="gdbus-method-org-freedesktop-timedate1.SetTime">SetTime</link>     (IN  x usec_utc,
+             IN  b relative,
+             IN  b user_interaction);
+<link linkend="gdbus-method-org-freedesktop-timedate1.SetTimezone">SetTimezone</link> (IN  s timezone,
+             IN  b user_interaction);
+<link linkend="gdbus-method-org-freedesktop-timedate1.SetLocalRTC">SetLocalRTC</link> (IN  b local_rtc,
+             IN  b fix_system,
+             IN  b user_interaction);
+<link linkend="gdbus-method-org-freedesktop-timedate1.SetNTP">SetNTP</link>      (IN  b use_ntp,
+             IN  b user_interaction);
+</synopsis>
+  </refsynopsisdiv>
+  <refsect1 role="properties">
+    <title role="properties.title">Properties</title>
+    <synopsis>
+<link linkend="gdbus-property-org-freedesktop-timedate1.Timezone">Timezone</link>  readable   s
+<link linkend="gdbus-property-org-freedesktop-timedate1.LocalRTC">LocalRTC</link>  readable   b
+<link linkend="gdbus-property-org-freedesktop-timedate1.NTP">NTP</link>       readable   b
+</synopsis>
+  </refsect1>
+<refsect1 role="desc" id="gdbus-interface-org-freedesktop-timedate1">
+  <title role="desc.title">Description</title>
+  <para></para>
+</refsect1>
+<refsect1 role="details" id="gdbus-methods-org.freedesktop.timedate1">
+  <title role="details.title">Method Details</title>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-timedate1.SetTime">
+  <title>The SetTime() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-timedate1.SetTime"><primary sortas=".SetTime">org.freedesktop.timedate1.SetTime()</primary></indexterm>
+<programlisting>
+SetTime (IN  x usec_utc,
+         IN  b relative,
+         IN  b user_interaction);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN x <parameter>usec_utc</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>relative</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>user_interaction</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-timedate1.SetTimezone">
+  <title>The SetTimezone() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-timedate1.SetTimezone"><primary sortas=".SetTimezone">org.freedesktop.timedate1.SetTimezone()</primary></indexterm>
+<programlisting>
+SetTimezone (IN  s timezone,
+             IN  b user_interaction);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>timezone</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>user_interaction</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-timedate1.SetLocalRTC">
+  <title>The SetLocalRTC() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-timedate1.SetLocalRTC"><primary sortas=".SetLocalRTC">org.freedesktop.timedate1.SetLocalRTC()</primary></indexterm>
+<programlisting>
+SetLocalRTC (IN  b local_rtc,
+             IN  b fix_system,
+             IN  b user_interaction);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN b <parameter>local_rtc</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>fix_system</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>user_interaction</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-timedate1.SetNTP">
+  <title>The SetNTP() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-timedate1.SetNTP"><primary sortas=".SetNTP">org.freedesktop.timedate1.SetNTP()</primary></indexterm>
+<programlisting>
+SetNTP (IN  b use_ntp,
+        IN  b user_interaction);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN b <parameter>use_ntp</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>user_interaction</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+</refsect1>
+<refsect1 role="details" id="gdbus-properties-org.freedesktop.timedate1">
+  <title role="details.title">Property Details</title>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-timedate1.Timezone">
+  <title>The "Timezone" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-timedate1.Timezone"><primary sortas=":Timezone">org.freedesktop.timedate1:Timezone</primary></indexterm>
+<programlisting>
+Timezone  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-timedate1.LocalRTC">
+  <title>The "LocalRTC" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-timedate1.LocalRTC"><primary sortas=":LocalRTC">org.freedesktop.timedate1:LocalRTC</primary></indexterm>
+<programlisting>
+LocalRTC  readable   b
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-timedate1.NTP">
+  <title>The "NTP" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-timedate1.NTP"><primary sortas=":NTP">org.freedesktop.timedate1:NTP</primary></indexterm>
+<programlisting>
+NTP  readable   b
+</programlisting>
+<para></para>
+</refsect2>
+</refsect1>
+</refentry>
+

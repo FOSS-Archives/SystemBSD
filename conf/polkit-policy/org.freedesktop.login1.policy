@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD polkit Policy Configuration 1.0//EN" "http://www.freedesktop.org/software/polkit/policyconfig-1.dtd">
+
+<policyconfig>
+    <vendor>OpenBSD</vendor>
+    <vendor_url>https://uglyman.kremlin.cc/gitweb/gitweb.cgi?p=systembsd.git</vendor_url> <!-- TODO change or redirect this URL when we rebase -->
+
+    <!-- TODO this nightmare -->
+
+</policyconfig>

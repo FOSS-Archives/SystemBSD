@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD polkit Policy Configuration 1.0//EN" "http://www.freedesktop.org/software/polkit/policyconfig-1.dtd">
+
+<policyconfig>
+    <vendor>OpenBSD</vendor>
+    <vendor_url>https://uglyman.kremlin.cc/gitweb/gitweb.cgi?p=systembsd.git</vendor_url> <!-- TODO change or redirect this URL when we rebase -->
+
+    <action id="org.freedesktop.hostname1.set-hostname">
+        <description>Set dynamic (system) hostname.</description>
+        <message>Setting the dynamic (system) hostname requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+
+    <action id="org.freedesktop.hostname1.set-static-hostname">
+        <description>Set static hostname.</description>
+        <message>Setting the static hostname requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+
+    <action id="org.freedesktop.hostname1.set-pretty-hostname">
+        <description>Set pretty (UTF-8) hostname.</description>
+        <message>Setting the pretty (UTF-8) hostname requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+
+    <action id="org.freedesktop.hostname1.set-icon-name">
+        <description>Set system's icon name.</description>
+        <message>Setting the system's icon name requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+
+    <action id="org.freedesktop.hostname1.set-chassis">
+        <description>Set system's chassis type.</description>
+        <message>Setting the system's chassis type requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+    <action id="org.freedesktop.hostname1.set-deployment">
+        <description>Set system's deployment.</description>
+        <message>Setting the system's deployment requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+    <action id="org.freedesktop.hostname1.set-location">
+        <description>Set system's location.</description>
+        <message>Setting the system's location requires authentication.</message>
+        <defaults>
+            <allow_any>auth_admin_keep</allow_any>
+            <allow_inactive>auth_admin_keep</allow_inactive>
+            <allow_active>auth_admin_keep</allow_active>
+        </defaults>
+    </action>
+</policyconfig>

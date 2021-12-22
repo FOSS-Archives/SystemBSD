@@ -1,0 +1,7 @@
+ * handle SIGINTs so file descriptors are dropped properly, otherwise we get bus errors next run
+ * document conf file settings
+ * add comment starting with XXX where ntpd should start up (see mail from jul 22)
+ * compile list of sysctl values divulging virtualization status
+ * integrate landry's laptop-checking mechanism
+ * add/integrate /etc/os-release provision
+ * handle prettyname/icon/chassis logic with config file

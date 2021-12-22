@@ -1,0 +1,5 @@
+For now, 'make' by itself will generate testable binaries in bin/
+
+TODO: ask ajac+landry about portability and autoconf + mk.conf
+TODO: write 'install' target
+TODO: write 'clean' target

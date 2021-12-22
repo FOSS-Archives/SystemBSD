@@ -1,0 +1,14 @@
+*.core
+bin/*.out
+bin/systemd-*
+bin/obj/*.o
+bin/*.bin
+src/interfaces/*/*-gen.*
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+*.sw*
+.*.sw*

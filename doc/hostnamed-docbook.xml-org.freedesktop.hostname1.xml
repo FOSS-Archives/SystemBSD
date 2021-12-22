@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+]>
+<refentry id="gdbus-org.freedesktop.hostname1">
+  <refmeta>    <refentrytitle role="top_of_page" id="gdbus-interface-org-freedesktop-hostname1.top_of_page">org.freedesktop.hostname1</refentrytitle>
+  <indexterm zone="gdbus-interface-org-freedesktop-hostname1.top_of_page"><primary sortas="hostname1">org.freedesktop.hostname1</primary></indexterm>
+  </refmeta>  <refnamediv>    <refname>org.freedesktop.hostname1</refname>    <refpurpose></refpurpose>  </refnamediv>  <refsynopsisdiv role="synopsis">
+    <title role="synopsis.title">Methods</title>
+    <synopsis>
+<link linkend="gdbus-method-org-freedesktop-hostname1.SetHostname">SetHostname</link>       (IN  s unnamed_arg0,
+                   IN  b unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-hostname1.SetStaticHostname">SetStaticHostname</link> (IN  s unnamed_arg0,
+                   IN  b unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-hostname1.SetPrettyHostname">SetPrettyHostname</link> (IN  s unnamed_arg0,
+                   IN  b unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-hostname1.SetIconName">SetIconName</link>       (IN  s unnamed_arg0,
+                   IN  b unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-hostname1.SetChassis">SetChassis</link>        (IN  s unnamed_arg0,
+                   IN  b unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-hostname1.SetDeployment">SetDeployment</link>     (IN  s unnamed_arg0,
+                   IN  b unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-hostname1.SetLocation">SetLocation</link>       (IN  s unnamed_arg0,
+                   IN  b unnamed_arg1);
+</synopsis>
+  </refsynopsisdiv>
+  <refsect1 role="properties">
+    <title role="properties.title">Properties</title>
+    <synopsis>
+<link linkend="gdbus-property-org-freedesktop-hostname1.Hostname">Hostname</link>                   readable   s
+<link linkend="gdbus-property-org-freedesktop-hostname1.StaticHostname">StaticHostname</link>             readable   s
+<link linkend="gdbus-property-org-freedesktop-hostname1.PrettyHostname">PrettyHostname</link>             readable   s
+<link linkend="gdbus-property-org-freedesktop-hostname1.IconName">IconName</link>                   readable   s
+<link linkend="gdbus-property-org-freedesktop-hostname1.Chassis">Chassis</link>                    readable   s
+<link linkend="gdbus-property-org-freedesktop-hostname1.Location">Location</link>                   readable   s
+<link linkend="gdbus-property-org-freedesktop-hostname1.Deployment">Deployment</link>                 readable   s
+<link linkend="gdbus-property-org-freedesktop-hostname1.KernelName">KernelName</link>                 readable   s
+<link linkend="gdbus-property-org-freedesktop-hostname1.KernelRelease">KernelRelease</link>              readable   s
+<link linkend="gdbus-property-org-freedesktop-hostname1.KernelVersion">KernelVersion</link>              readable   s
+<link linkend="gdbus-property-org-freedesktop-hostname1.OperatingSystemPrettyName">OperatingSystemPrettyName</link>  readable   s
+<link linkend="gdbus-property-org-freedesktop-hostname1.OperatingSystemCPEName">OperatingSystemCPEName</link>     readable   s
+</synopsis>
+  </refsect1>
+<refsect1 role="desc" id="gdbus-interface-org-freedesktop-hostname1">
+  <title role="desc.title">Description</title>
+  <para></para>
+</refsect1>
+<refsect1 role="details" id="gdbus-methods-org.freedesktop.hostname1">
+  <title role="details.title">Method Details</title>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-hostname1.SetHostname">
+  <title>The SetHostname() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-hostname1.SetHostname"><primary sortas="hostname1.SetHostname">org.freedesktop.hostname1.SetHostname()</primary></indexterm>
+<programlisting>
+SetHostname (IN  s unnamed_arg0,
+             IN  b unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-hostname1.SetStaticHostname">
+  <title>The SetStaticHostname() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-hostname1.SetStaticHostname"><primary sortas="hostname1.SetStaticHostname">org.freedesktop.hostname1.SetStaticHostname()</primary></indexterm>
+<programlisting>
+SetStaticHostname (IN  s unnamed_arg0,
+                   IN  b unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-hostname1.SetPrettyHostname">
+  <title>The SetPrettyHostname() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-hostname1.SetPrettyHostname"><primary sortas="hostname1.SetPrettyHostname">org.freedesktop.hostname1.SetPrettyHostname()</primary></indexterm>
+<programlisting>
+SetPrettyHostname (IN  s unnamed_arg0,
+                   IN  b unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-hostname1.SetIconName">
+  <title>The SetIconName() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-hostname1.SetIconName"><primary sortas="hostname1.SetIconName">org.freedesktop.hostname1.SetIconName()</primary></indexterm>
+<programlisting>
+SetIconName (IN  s unnamed_arg0,
+             IN  b unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-hostname1.SetChassis">
+  <title>The SetChassis() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-hostname1.SetChassis"><primary sortas="hostname1.SetChassis">org.freedesktop.hostname1.SetChassis()</primary></indexterm>
+<programlisting>
+SetChassis (IN  s unnamed_arg0,
+            IN  b unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-hostname1.SetDeployment">
+  <title>The SetDeployment() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-hostname1.SetDeployment"><primary sortas="hostname1.SetDeployment">org.freedesktop.hostname1.SetDeployment()</primary></indexterm>
+<programlisting>
+SetDeployment (IN  s unnamed_arg0,
+               IN  b unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-hostname1.SetLocation">
+  <title>The SetLocation() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-hostname1.SetLocation"><primary sortas="hostname1.SetLocation">org.freedesktop.hostname1.SetLocation()</primary></indexterm>
+<programlisting>
+SetLocation (IN  s unnamed_arg0,
+             IN  b unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+</refsect1>
+<refsect1 role="details" id="gdbus-properties-org.freedesktop.hostname1">
+  <title role="details.title">Property Details</title>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-hostname1.Hostname">
+  <title>The "Hostname" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-hostname1.Hostname"><primary sortas="hostname1:Hostname">org.freedesktop.hostname1:Hostname</primary></indexterm>
+<programlisting>
+Hostname  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-hostname1.StaticHostname">
+  <title>The "StaticHostname" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-hostname1.StaticHostname"><primary sortas="hostname1:StaticHostname">org.freedesktop.hostname1:StaticHostname</primary></indexterm>
+<programlisting>
+StaticHostname  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-hostname1.PrettyHostname">
+  <title>The "PrettyHostname" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-hostname1.PrettyHostname"><primary sortas="hostname1:PrettyHostname">org.freedesktop.hostname1:PrettyHostname</primary></indexterm>
+<programlisting>
+PrettyHostname  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-hostname1.IconName">
+  <title>The "IconName" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-hostname1.IconName"><primary sortas="hostname1:IconName">org.freedesktop.hostname1:IconName</primary></indexterm>
+<programlisting>
+IconName  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-hostname1.Chassis">
+  <title>The "Chassis" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-hostname1.Chassis"><primary sortas="hostname1:Chassis">org.freedesktop.hostname1:Chassis</primary></indexterm>
+<programlisting>
+Chassis  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-hostname1.Location">
+  <title>The "Location" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-hostname1.Location"><primary sortas="hostname1:Location">org.freedesktop.hostname1:Location</primary></indexterm>
+<programlisting>
+Location  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-hostname1.Deployment">
+  <title>The "Deployment" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-hostname1.Deployment"><primary sortas="hostname1:Deployment">org.freedesktop.hostname1:Deployment</primary></indexterm>
+<programlisting>
+Deployment  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-hostname1.KernelName">
+  <title>The "KernelName" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-hostname1.KernelName"><primary sortas="hostname1:KernelName">org.freedesktop.hostname1:KernelName</primary></indexterm>
+<programlisting>
+KernelName  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-hostname1.KernelRelease">
+  <title>The "KernelRelease" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-hostname1.KernelRelease"><primary sortas="hostname1:KernelRelease">org.freedesktop.hostname1:KernelRelease</primary></indexterm>
+<programlisting>
+KernelRelease  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-hostname1.KernelVersion">
+  <title>The "KernelVersion" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-hostname1.KernelVersion"><primary sortas="hostname1:KernelVersion">org.freedesktop.hostname1:KernelVersion</primary></indexterm>
+<programlisting>
+KernelVersion  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-hostname1.OperatingSystemPrettyName">
+  <title>The "OperatingSystemPrettyName" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-hostname1.OperatingSystemPrettyName"><primary sortas="hostname1:OperatingSystemPrettyName">org.freedesktop.hostname1:OperatingSystemPrettyName</primary></indexterm>
+<programlisting>
+OperatingSystemPrettyName  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-hostname1.OperatingSystemCPEName">
+  <title>The "OperatingSystemCPEName" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-hostname1.OperatingSystemCPEName"><primary sortas="hostname1:OperatingSystemCPEName">org.freedesktop.hostname1:OperatingSystemCPEName</primary></indexterm>
+<programlisting>
+OperatingSystemCPEName  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+</refsect1>
+</refentry>
+

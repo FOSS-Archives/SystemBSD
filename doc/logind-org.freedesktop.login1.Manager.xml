@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+]>
+<refentry id="gdbus-org.freedesktop.login1.Manager">
+  <refmeta>    <refentrytitle role="top_of_page" id="gdbus-interface-org-freedesktop-login1-Manager.top_of_page">org.freedesktop.login1.Manager</refentrytitle>
+  <indexterm zone="gdbus-interface-org-freedesktop-login1-Manager.top_of_page"><primary sortas=".Manager">org.freedesktop.login1.Manager</primary></indexterm>
+  </refmeta>  <refnamediv>    <refname>org.freedesktop.login1.Manager</refname>    <refpurpose></refpurpose>  </refnamediv>  <refsynopsisdiv role="synopsis">
+    <title role="synopsis.title">Methods</title>
+    <synopsis>
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.GetSession">GetSession</link>            (IN  s         unnamed_arg0,
+                       OUT o         unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.GetSessionByPID">GetSessionByPID</link>       (IN  u         unnamed_arg0,
+                       OUT o         unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.GetUser">GetUser</link>               (IN  u         unnamed_arg0,
+                       OUT o         unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.GetUserByPID">GetUserByPID</link>          (IN  u         unnamed_arg0,
+                       OUT o         unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.GetSeat">GetSeat</link>               (IN  s         unnamed_arg0,
+                       OUT o         unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.ListSessions">ListSessions</link>          (OUT a(susso)  unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.ListUsers">ListUsers</link>             (OUT a(uso)    unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.ListSeats">ListSeats</link>             (OUT a(so)     unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.ListInhibitors">ListInhibitors</link>        (OUT a(ssssuu) unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.CreateSession">CreateSession</link>         (IN  u         unnamed_arg0,
+                       IN  u         unnamed_arg1,
+                       IN  s         unnamed_arg2,
+                       IN  s         unnamed_arg3,
+                       IN  s         unnamed_arg4,
+                       IN  s         unnamed_arg5,
+                       IN  s         unnamed_arg6,
+                       IN  u         unnamed_arg7,
+                       IN  s         unnamed_arg8,
+                       IN  s         unnamed_arg9,
+                       IN  b         unnamed_arg10,
+                       IN  s         unnamed_arg11,
+                       IN  s         unnamed_arg12,
+                       IN  a(sv)     unnamed_arg13,
+                       OUT s         unnamed_arg14,
+                       OUT o         unnamed_arg15,
+                       OUT s         unnamed_arg16,
+                       OUT h         unnamed_arg17,
+                       OUT u         unnamed_arg18,
+                       OUT s         unnamed_arg19,
+                       OUT u         unnamed_arg20,
+                       OUT b         unnamed_arg21);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.ReleaseSession">ReleaseSession</link>        (IN  s         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.ActivateSession">ActivateSession</link>       (IN  s         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.ActivateSessionOnSeat">ActivateSessionOnSeat</link> (IN  s         unnamed_arg0,
+                       IN  s         unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.LockSession">LockSession</link>           (IN  s         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.UnlockSession">UnlockSession</link>         (IN  s         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.LockSessions">LockSessions</link>          ();
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.UnlockSessions">UnlockSessions</link>        ();
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.KillSession">KillSession</link>           (IN  s         unnamed_arg0,
+                       IN  s         unnamed_arg1,
+                       IN  i         unnamed_arg2);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.KillUser">KillUser</link>              (IN  u         unnamed_arg0,
+                       IN  i         unnamed_arg1);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.TerminateSession">TerminateSession</link>      (IN  s         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.TerminateUser">TerminateUser</link>         (IN  u         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.TerminateSeat">TerminateSeat</link>         (IN  s         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.SetUserLinger">SetUserLinger</link>         (IN  u         unnamed_arg0,
+                       IN  b         unnamed_arg1,
+                       IN  b         unnamed_arg2);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.AttachDevice">AttachDevice</link>          (IN  s         unnamed_arg0,
+                       IN  s         unnamed_arg1,
+                       IN  b         unnamed_arg2);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.FlushDevices">FlushDevices</link>          (IN  b         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.PowerOff">PowerOff</link>              (IN  b         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.Reboot">Reboot</link>                (IN  b         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.Suspend">Suspend</link>               (IN  b         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.Hibernate">Hibernate</link>             (IN  b         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.HybridSleep">HybridSleep</link>           (IN  b         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.CanPowerOff">CanPowerOff</link>           (OUT s         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.CanReboot">CanReboot</link>             (OUT s         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.CanSuspend">CanSuspend</link>            (OUT s         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.CanHibernate">CanHibernate</link>          (OUT s         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.CanHybridSleep">CanHybridSleep</link>        (OUT s         unnamed_arg0);
+<link linkend="gdbus-method-org-freedesktop-login1-Manager.Inhibit">Inhibit</link>               (IN  s         unnamed_arg0,
+                       IN  s         unnamed_arg1,
+                       IN  s         unnamed_arg2,
+                       IN  s         unnamed_arg3,
+                       OUT h         unnamed_arg4);
+</synopsis>
+  </refsynopsisdiv>
+  <refsect1 role="signal_proto">
+    <title role="signal_proto.title">Signals</title>
+    <synopsis>
+<link linkend="gdbus-signal-org-freedesktop-login1-Manager.SessionNew">SessionNew</link>         (s unnamed_arg0,
+                    o unnamed_arg1);
+<link linkend="gdbus-signal-org-freedesktop-login1-Manager.SessionRemoved">SessionRemoved</link>     (s unnamed_arg0,
+                    o unnamed_arg1);
+<link linkend="gdbus-signal-org-freedesktop-login1-Manager.UserNew">UserNew</link>            (u unnamed_arg0,
+                    o unnamed_arg1);
+<link linkend="gdbus-signal-org-freedesktop-login1-Manager.UserRemoved">UserRemoved</link>        (u unnamed_arg0,
+                    o unnamed_arg1);
+<link linkend="gdbus-signal-org-freedesktop-login1-Manager.SeatNew">SeatNew</link>            (s unnamed_arg0,
+                    o unnamed_arg1);
+<link linkend="gdbus-signal-org-freedesktop-login1-Manager.SeatRemoved">SeatRemoved</link>        (s unnamed_arg0,
+                    o unnamed_arg1);
+<link linkend="gdbus-signal-org-freedesktop-login1-Manager.PrepareForShutdown">PrepareForShutdown</link> (b unnamed_arg0);
+<link linkend="gdbus-signal-org-freedesktop-login1-Manager.PrepareForSleep">PrepareForSleep</link>    (b unnamed_arg0);
+</synopsis>
+  </refsect1>
+  <refsect1 role="properties">
+    <title role="properties.title">Properties</title>
+    <synopsis>
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.NAutoVTs">NAutoVTs</link>                readable   u
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.KillOnlyUsers">KillOnlyUsers</link>           readable   as
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.KillExcludeUsers">KillExcludeUsers</link>        readable   as
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.KillUserProcesses">KillUserProcesses</link>       readable   b
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.IdleHint">IdleHint</link>                readable   b
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.IdleSinceHint">IdleSinceHint</link>           readable   t
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.IdleSinceHintMonotonic">IdleSinceHintMonotonic</link>  readable   t
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.BlockInhibited">BlockInhibited</link>          readable   s
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.DelayInhibited">DelayInhibited</link>          readable   s
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.InhibitDelayMaxUSec">InhibitDelayMaxUSec</link>     readable   t
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.HandlePowerKey">HandlePowerKey</link>          readable   s
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.HandleSuspendKey">HandleSuspendKey</link>        readable   s
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.HandleHibernateKey">HandleHibernateKey</link>      readable   s
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.HandleLidSwitch">HandleLidSwitch</link>         readable   s
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.IdleAction">IdleAction</link>              readable   s
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.IdleActionUSec">IdleActionUSec</link>          readable   t
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.PreparingForShutdown">PreparingForShutdown</link>    readable   b
+<link linkend="gdbus-property-org-freedesktop-login1-Manager.PreparingForSleep">PreparingForSleep</link>       readable   b
+</synopsis>
+  </refsect1>
+<refsect1 role="desc" id="gdbus-interface-org-freedesktop-login1-Manager">
+  <title role="desc.title">Description</title>
+  <para></para>
+</refsect1>
+<refsect1 role="details" id="gdbus-methods-org.freedesktop.login1.Manager">
+  <title role="details.title">Method Details</title>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.GetSession">
+  <title>The GetSession() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.GetSession"><primary sortas=".Manager.GetSession">org.freedesktop.login1.Manager.GetSession()</primary></indexterm>
+<programlisting>
+GetSession (IN  s unnamed_arg0,
+            OUT o unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT o <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.GetSessionByPID">
+  <title>The GetSessionByPID() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.GetSessionByPID"><primary sortas=".Manager.GetSessionByPID">org.freedesktop.login1.Manager.GetSessionByPID()</primary></indexterm>
+<programlisting>
+GetSessionByPID (IN  u unnamed_arg0,
+                 OUT o unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN u <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT o <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.GetUser">
+  <title>The GetUser() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.GetUser"><primary sortas=".Manager.GetUser">org.freedesktop.login1.Manager.GetUser()</primary></indexterm>
+<programlisting>
+GetUser (IN  u unnamed_arg0,
+         OUT o unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN u <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT o <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.GetUserByPID">
+  <title>The GetUserByPID() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.GetUserByPID"><primary sortas=".Manager.GetUserByPID">org.freedesktop.login1.Manager.GetUserByPID()</primary></indexterm>
+<programlisting>
+GetUserByPID (IN  u unnamed_arg0,
+              OUT o unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN u <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT o <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.GetSeat">
+  <title>The GetSeat() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.GetSeat"><primary sortas=".Manager.GetSeat">org.freedesktop.login1.Manager.GetSeat()</primary></indexterm>
+<programlisting>
+GetSeat (IN  s unnamed_arg0,
+         OUT o unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT o <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.ListSessions">
+  <title>The ListSessions() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.ListSessions"><primary sortas=".Manager.ListSessions">org.freedesktop.login1.Manager.ListSessions()</primary></indexterm>
+<programlisting>
+ListSessions (OUT a(susso) unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>OUT a(susso) <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.ListUsers">
+  <title>The ListUsers() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.ListUsers"><primary sortas=".Manager.ListUsers">org.freedesktop.login1.Manager.ListUsers()</primary></indexterm>
+<programlisting>
+ListUsers (OUT a(uso) unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>OUT a(uso) <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.ListSeats">
+  <title>The ListSeats() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.ListSeats"><primary sortas=".Manager.ListSeats">org.freedesktop.login1.Manager.ListSeats()</primary></indexterm>
+<programlisting>
+ListSeats (OUT a(so) unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>OUT a(so) <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.ListInhibitors">
+  <title>The ListInhibitors() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.ListInhibitors"><primary sortas=".Manager.ListInhibitors">org.freedesktop.login1.Manager.ListInhibitors()</primary></indexterm>
+<programlisting>
+ListInhibitors (OUT a(ssssuu) unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>OUT a(ssssuu) <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.CreateSession">
+  <title>The CreateSession() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.CreateSession"><primary sortas=".Manager.CreateSession">org.freedesktop.login1.Manager.CreateSession()</primary></indexterm>
+<programlisting>
+CreateSession (IN  u     unnamed_arg0,
+               IN  u     unnamed_arg1,
+               IN  s     unnamed_arg2,
+               IN  s     unnamed_arg3,
+               IN  s     unnamed_arg4,
+               IN  s     unnamed_arg5,
+               IN  s     unnamed_arg6,
+               IN  u     unnamed_arg7,
+               IN  s     unnamed_arg8,
+               IN  s     unnamed_arg9,
+               IN  b     unnamed_arg10,
+               IN  s     unnamed_arg11,
+               IN  s     unnamed_arg12,
+               IN  a(sv) unnamed_arg13,
+               OUT s     unnamed_arg14,
+               OUT o     unnamed_arg15,
+               OUT s     unnamed_arg16,
+               OUT h     unnamed_arg17,
+               OUT u     unnamed_arg18,
+               OUT s     unnamed_arg19,
+               OUT u     unnamed_arg20,
+               OUT b     unnamed_arg21);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN u <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN u <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg2</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg3</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg4</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg5</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg6</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN u <parameter>unnamed_arg7</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg8</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg9</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg10</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg11</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg12</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN a(sv) <parameter>unnamed_arg13</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT s <parameter>unnamed_arg14</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT o <parameter>unnamed_arg15</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT s <parameter>unnamed_arg16</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT h <parameter>unnamed_arg17</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT u <parameter>unnamed_arg18</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT s <parameter>unnamed_arg19</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT u <parameter>unnamed_arg20</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT b <parameter>unnamed_arg21</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.ReleaseSession">
+  <title>The ReleaseSession() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.ReleaseSession"><primary sortas=".Manager.ReleaseSession">org.freedesktop.login1.Manager.ReleaseSession()</primary></indexterm>
+<programlisting>
+ReleaseSession (IN  s unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.ActivateSession">
+  <title>The ActivateSession() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.ActivateSession"><primary sortas=".Manager.ActivateSession">org.freedesktop.login1.Manager.ActivateSession()</primary></indexterm>
+<programlisting>
+ActivateSession (IN  s unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.ActivateSessionOnSeat">
+  <title>The ActivateSessionOnSeat() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.ActivateSessionOnSeat"><primary sortas=".Manager.ActivateSessionOnSeat">org.freedesktop.login1.Manager.ActivateSessionOnSeat()</primary></indexterm>
+<programlisting>
+ActivateSessionOnSeat (IN  s unnamed_arg0,
+                       IN  s unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.LockSession">
+  <title>The LockSession() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.LockSession"><primary sortas=".Manager.LockSession">org.freedesktop.login1.Manager.LockSession()</primary></indexterm>
+<programlisting>
+LockSession (IN  s unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.UnlockSession">
+  <title>The UnlockSession() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.UnlockSession"><primary sortas=".Manager.UnlockSession">org.freedesktop.login1.Manager.UnlockSession()</primary></indexterm>
+<programlisting>
+UnlockSession (IN  s unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.LockSessions">
+  <title>The LockSessions() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.LockSessions"><primary sortas=".Manager.LockSessions">org.freedesktop.login1.Manager.LockSessions()</primary></indexterm>
+<programlisting>
+LockSessions ();
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.UnlockSessions">
+  <title>The UnlockSessions() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.UnlockSessions"><primary sortas=".Manager.UnlockSessions">org.freedesktop.login1.Manager.UnlockSessions()</primary></indexterm>
+<programlisting>
+UnlockSessions ();
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.KillSession">
+  <title>The KillSession() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.KillSession"><primary sortas=".Manager.KillSession">org.freedesktop.login1.Manager.KillSession()</primary></indexterm>
+<programlisting>
+KillSession (IN  s unnamed_arg0,
+             IN  s unnamed_arg1,
+             IN  i unnamed_arg2);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN i <parameter>unnamed_arg2</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.KillUser">
+  <title>The KillUser() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.KillUser"><primary sortas=".Manager.KillUser">org.freedesktop.login1.Manager.KillUser()</primary></indexterm>
+<programlisting>
+KillUser (IN  u unnamed_arg0,
+          IN  i unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN u <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN i <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.TerminateSession">
+  <title>The TerminateSession() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.TerminateSession"><primary sortas=".Manager.TerminateSession">org.freedesktop.login1.Manager.TerminateSession()</primary></indexterm>
+<programlisting>
+TerminateSession (IN  s unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.TerminateUser">
+  <title>The TerminateUser() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.TerminateUser"><primary sortas=".Manager.TerminateUser">org.freedesktop.login1.Manager.TerminateUser()</primary></indexterm>
+<programlisting>
+TerminateUser (IN  u unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN u <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.TerminateSeat">
+  <title>The TerminateSeat() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.TerminateSeat"><primary sortas=".Manager.TerminateSeat">org.freedesktop.login1.Manager.TerminateSeat()</primary></indexterm>
+<programlisting>
+TerminateSeat (IN  s unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.SetUserLinger">
+  <title>The SetUserLinger() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.SetUserLinger"><primary sortas=".Manager.SetUserLinger">org.freedesktop.login1.Manager.SetUserLinger()</primary></indexterm>
+<programlisting>
+SetUserLinger (IN  u unnamed_arg0,
+               IN  b unnamed_arg1,
+               IN  b unnamed_arg2);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN u <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg2</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.AttachDevice">
+  <title>The AttachDevice() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.AttachDevice"><primary sortas=".Manager.AttachDevice">org.freedesktop.login1.Manager.AttachDevice()</primary></indexterm>
+<programlisting>
+AttachDevice (IN  s unnamed_arg0,
+              IN  s unnamed_arg1,
+              IN  b unnamed_arg2);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg2</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.FlushDevices">
+  <title>The FlushDevices() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.FlushDevices"><primary sortas=".Manager.FlushDevices">org.freedesktop.login1.Manager.FlushDevices()</primary></indexterm>
+<programlisting>
+FlushDevices (IN  b unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.PowerOff">
+  <title>The PowerOff() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.PowerOff"><primary sortas=".Manager.PowerOff">org.freedesktop.login1.Manager.PowerOff()</primary></indexterm>
+<programlisting>
+PowerOff (IN  b unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.Reboot">
+  <title>The Reboot() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.Reboot"><primary sortas=".Manager.Reboot">org.freedesktop.login1.Manager.Reboot()</primary></indexterm>
+<programlisting>
+Reboot (IN  b unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.Suspend">
+  <title>The Suspend() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.Suspend"><primary sortas=".Manager.Suspend">org.freedesktop.login1.Manager.Suspend()</primary></indexterm>
+<programlisting>
+Suspend (IN  b unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.Hibernate">
+  <title>The Hibernate() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.Hibernate"><primary sortas=".Manager.Hibernate">org.freedesktop.login1.Manager.Hibernate()</primary></indexterm>
+<programlisting>
+Hibernate (IN  b unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.HybridSleep">
+  <title>The HybridSleep() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.HybridSleep"><primary sortas=".Manager.HybridSleep">org.freedesktop.login1.Manager.HybridSleep()</primary></indexterm>
+<programlisting>
+HybridSleep (IN  b unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN b <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.CanPowerOff">
+  <title>The CanPowerOff() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.CanPowerOff"><primary sortas=".Manager.CanPowerOff">org.freedesktop.login1.Manager.CanPowerOff()</primary></indexterm>
+<programlisting>
+CanPowerOff (OUT s unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>OUT s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.CanReboot">
+  <title>The CanReboot() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.CanReboot"><primary sortas=".Manager.CanReboot">org.freedesktop.login1.Manager.CanReboot()</primary></indexterm>
+<programlisting>
+CanReboot (OUT s unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>OUT s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.CanSuspend">
+  <title>The CanSuspend() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.CanSuspend"><primary sortas=".Manager.CanSuspend">org.freedesktop.login1.Manager.CanSuspend()</primary></indexterm>
+<programlisting>
+CanSuspend (OUT s unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>OUT s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.CanHibernate">
+  <title>The CanHibernate() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.CanHibernate"><primary sortas=".Manager.CanHibernate">org.freedesktop.login1.Manager.CanHibernate()</primary></indexterm>
+<programlisting>
+CanHibernate (OUT s unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>OUT s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.CanHybridSleep">
+  <title>The CanHybridSleep() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.CanHybridSleep"><primary sortas=".Manager.CanHybridSleep">org.freedesktop.login1.Manager.CanHybridSleep()</primary></indexterm>
+<programlisting>
+CanHybridSleep (OUT s unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>OUT s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="method" id="gdbus-method-org-freedesktop-login1-Manager.Inhibit">
+  <title>The Inhibit() method</title>
+  <indexterm zone="gdbus-method-org-freedesktop-login1-Manager.Inhibit"><primary sortas=".Manager.Inhibit">org.freedesktop.login1.Manager.Inhibit()</primary></indexterm>
+<programlisting>
+Inhibit (IN  s unnamed_arg0,
+         IN  s unnamed_arg1,
+         IN  s unnamed_arg2,
+         IN  s unnamed_arg3,
+         OUT h unnamed_arg4);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg2</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>IN s <parameter>unnamed_arg3</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>OUT h <parameter>unnamed_arg4</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+</refsect1>
+<refsect1 role="details" id="gdbus-signals-org.freedesktop.login1.Manager">
+  <title role="details.title">Signal Details</title>
+<refsect2 role="signal" id="gdbus-signal-org-freedesktop-login1-Manager.SessionNew">
+  <title>The "SessionNew" signal</title>
+  <indexterm zone="gdbus-signal-org-freedesktop-login1-Manager.SessionNew"><primary sortas=".Manager::SessionNew">org.freedesktop.login1.Manager::SessionNew</primary></indexterm>
+<programlisting>
+SessionNew (s unnamed_arg0,
+            o unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>o <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="signal" id="gdbus-signal-org-freedesktop-login1-Manager.SessionRemoved">
+  <title>The "SessionRemoved" signal</title>
+  <indexterm zone="gdbus-signal-org-freedesktop-login1-Manager.SessionRemoved"><primary sortas=".Manager::SessionRemoved">org.freedesktop.login1.Manager::SessionRemoved</primary></indexterm>
+<programlisting>
+SessionRemoved (s unnamed_arg0,
+                o unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>o <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="signal" id="gdbus-signal-org-freedesktop-login1-Manager.UserNew">
+  <title>The "UserNew" signal</title>
+  <indexterm zone="gdbus-signal-org-freedesktop-login1-Manager.UserNew"><primary sortas=".Manager::UserNew">org.freedesktop.login1.Manager::UserNew</primary></indexterm>
+<programlisting>
+UserNew (u unnamed_arg0,
+         o unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>u <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>o <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="signal" id="gdbus-signal-org-freedesktop-login1-Manager.UserRemoved">
+  <title>The "UserRemoved" signal</title>
+  <indexterm zone="gdbus-signal-org-freedesktop-login1-Manager.UserRemoved"><primary sortas=".Manager::UserRemoved">org.freedesktop.login1.Manager::UserRemoved</primary></indexterm>
+<programlisting>
+UserRemoved (u unnamed_arg0,
+             o unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>u <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>o <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="signal" id="gdbus-signal-org-freedesktop-login1-Manager.SeatNew">
+  <title>The "SeatNew" signal</title>
+  <indexterm zone="gdbus-signal-org-freedesktop-login1-Manager.SeatNew"><primary sortas=".Manager::SeatNew">org.freedesktop.login1.Manager::SeatNew</primary></indexterm>
+<programlisting>
+SeatNew (s unnamed_arg0,
+         o unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>o <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="signal" id="gdbus-signal-org-freedesktop-login1-Manager.SeatRemoved">
+  <title>The "SeatRemoved" signal</title>
+  <indexterm zone="gdbus-signal-org-freedesktop-login1-Manager.SeatRemoved"><primary sortas=".Manager::SeatRemoved">org.freedesktop.login1.Manager::SeatRemoved</primary></indexterm>
+<programlisting>
+SeatRemoved (s unnamed_arg0,
+             o unnamed_arg1);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>s <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+<varlistentry>
+  <term><literal>o <parameter>unnamed_arg1</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="signal" id="gdbus-signal-org-freedesktop-login1-Manager.PrepareForShutdown">
+  <title>The "PrepareForShutdown" signal</title>
+  <indexterm zone="gdbus-signal-org-freedesktop-login1-Manager.PrepareForShutdown"><primary sortas=".Manager::PrepareForShutdown">org.freedesktop.login1.Manager::PrepareForShutdown</primary></indexterm>
+<programlisting>
+PrepareForShutdown (b unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>b <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+<refsect2 role="signal" id="gdbus-signal-org-freedesktop-login1-Manager.PrepareForSleep">
+  <title>The "PrepareForSleep" signal</title>
+  <indexterm zone="gdbus-signal-org-freedesktop-login1-Manager.PrepareForSleep"><primary sortas=".Manager::PrepareForSleep">org.freedesktop.login1.Manager::PrepareForSleep</primary></indexterm>
+<programlisting>
+PrepareForSleep (b unnamed_arg0);
+</programlisting>
+<para></para>
+<variablelist role="params">
+<varlistentry>
+  <term><literal>b <parameter>unnamed_arg0</parameter></literal>:</term>
+  <listitem><para></para></listitem>
+</varlistentry>
+</variablelist>
+</refsect2>
+</refsect1>
+<refsect1 role="details" id="gdbus-properties-org.freedesktop.login1.Manager">
+  <title role="details.title">Property Details</title>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.NAutoVTs">
+  <title>The "NAutoVTs" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.NAutoVTs"><primary sortas=".Manager:NAutoVTs">org.freedesktop.login1.Manager:NAutoVTs</primary></indexterm>
+<programlisting>
+NAutoVTs  readable   u
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.KillOnlyUsers">
+  <title>The "KillOnlyUsers" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.KillOnlyUsers"><primary sortas=".Manager:KillOnlyUsers">org.freedesktop.login1.Manager:KillOnlyUsers</primary></indexterm>
+<programlisting>
+KillOnlyUsers  readable   as
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.KillExcludeUsers">
+  <title>The "KillExcludeUsers" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.KillExcludeUsers"><primary sortas=".Manager:KillExcludeUsers">org.freedesktop.login1.Manager:KillExcludeUsers</primary></indexterm>
+<programlisting>
+KillExcludeUsers  readable   as
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.KillUserProcesses">
+  <title>The "KillUserProcesses" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.KillUserProcesses"><primary sortas=".Manager:KillUserProcesses">org.freedesktop.login1.Manager:KillUserProcesses</primary></indexterm>
+<programlisting>
+KillUserProcesses  readable   b
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.IdleHint">
+  <title>The "IdleHint" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.IdleHint"><primary sortas=".Manager:IdleHint">org.freedesktop.login1.Manager:IdleHint</primary></indexterm>
+<programlisting>
+IdleHint  readable   b
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.IdleSinceHint">
+  <title>The "IdleSinceHint" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.IdleSinceHint"><primary sortas=".Manager:IdleSinceHint">org.freedesktop.login1.Manager:IdleSinceHint</primary></indexterm>
+<programlisting>
+IdleSinceHint  readable   t
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.IdleSinceHintMonotonic">
+  <title>The "IdleSinceHintMonotonic" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.IdleSinceHintMonotonic"><primary sortas=".Manager:IdleSinceHintMonotonic">org.freedesktop.login1.Manager:IdleSinceHintMonotonic</primary></indexterm>
+<programlisting>
+IdleSinceHintMonotonic  readable   t
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.BlockInhibited">
+  <title>The "BlockInhibited" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.BlockInhibited"><primary sortas=".Manager:BlockInhibited">org.freedesktop.login1.Manager:BlockInhibited</primary></indexterm>
+<programlisting>
+BlockInhibited  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.DelayInhibited">
+  <title>The "DelayInhibited" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.DelayInhibited"><primary sortas=".Manager:DelayInhibited">org.freedesktop.login1.Manager:DelayInhibited</primary></indexterm>
+<programlisting>
+DelayInhibited  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.InhibitDelayMaxUSec">
+  <title>The "InhibitDelayMaxUSec" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.InhibitDelayMaxUSec"><primary sortas=".Manager:InhibitDelayMaxUSec">org.freedesktop.login1.Manager:InhibitDelayMaxUSec</primary></indexterm>
+<programlisting>
+InhibitDelayMaxUSec  readable   t
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.HandlePowerKey">
+  <title>The "HandlePowerKey" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.HandlePowerKey"><primary sortas=".Manager:HandlePowerKey">org.freedesktop.login1.Manager:HandlePowerKey</primary></indexterm>
+<programlisting>
+HandlePowerKey  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.HandleSuspendKey">
+  <title>The "HandleSuspendKey" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.HandleSuspendKey"><primary sortas=".Manager:HandleSuspendKey">org.freedesktop.login1.Manager:HandleSuspendKey</primary></indexterm>
+<programlisting>
+HandleSuspendKey  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.HandleHibernateKey">
+  <title>The "HandleHibernateKey" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.HandleHibernateKey"><primary sortas=".Manager:HandleHibernateKey">org.freedesktop.login1.Manager:HandleHibernateKey</primary></indexterm>
+<programlisting>
+HandleHibernateKey  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.HandleLidSwitch">
+  <title>The "HandleLidSwitch" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.HandleLidSwitch"><primary sortas=".Manager:HandleLidSwitch">org.freedesktop.login1.Manager:HandleLidSwitch</primary></indexterm>
+<programlisting>
+HandleLidSwitch  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.IdleAction">
+  <title>The "IdleAction" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.IdleAction"><primary sortas=".Manager:IdleAction">org.freedesktop.login1.Manager:IdleAction</primary></indexterm>
+<programlisting>
+IdleAction  readable   s
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.IdleActionUSec">
+  <title>The "IdleActionUSec" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.IdleActionUSec"><primary sortas=".Manager:IdleActionUSec">org.freedesktop.login1.Manager:IdleActionUSec</primary></indexterm>
+<programlisting>
+IdleActionUSec  readable   t
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.PreparingForShutdown">
+  <title>The "PreparingForShutdown" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.PreparingForShutdown"><primary sortas=".Manager:PreparingForShutdown">org.freedesktop.login1.Manager:PreparingForShutdown</primary></indexterm>
+<programlisting>
+PreparingForShutdown  readable   b
+</programlisting>
+<para></para>
+</refsect2>
+<refsect2 role="property" id="gdbus-property-org-freedesktop-login1-Manager.PreparingForSleep">
+  <title>The "PreparingForSleep" property</title>
+  <indexterm zone="gdbus-property-org-freedesktop-login1-Manager.PreparingForSleep"><primary sortas=".Manager:PreparingForSleep">org.freedesktop.login1.Manager:PreparingForSleep</primary></indexterm>
+<programlisting>
+PreparingForSleep  readable   b
+</programlisting>
+<para></para>
+</refsect2>
+</refsect1>
+</refentry>
+
