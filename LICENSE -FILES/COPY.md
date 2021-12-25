@@ -12,7 +12,7 @@ The copyright notice and the permission notice shall be included in all copies o
 
 ---
 
-###  and/or original:
+###  and/or the original:
 Copyright (C) 2014, Ian Sutton <ian@kremlin.cc> 
  
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.
