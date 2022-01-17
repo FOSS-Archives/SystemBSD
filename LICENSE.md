@@ -1,4 +1,3 @@
-MIT License
 
 Copyright (c) 2014 Ian Sutton <<ian@kremlin.cc>>
 
