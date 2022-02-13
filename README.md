@@ -1,6 +1,19 @@
-this file explains my workflow/structuring habits and is meant only to
-save mentor's time. ideally, this file will be deleted before "release"
-and all files will follow standard protocol/KNF.
+  ## Disclaimer: 
+ The archived work in this repo (Ian Sutton's) was originally under an ISC-Type License, have sought permission for myself & have been granted permission by creator to: 
++ Sublicense and/or Multilicense, mainly under equivalent permissives used in other projects for example types that also provide the same permissions & conditions, even if worded differently for other software. 
+ such as; MIT-1 or BSD-1-Clause & 2-Clause (Or other compliant BSD-Style) etc etc. 
+- ***(But Never GPL)*** 
+ 
+######   *(Please See the Licenses Folder for more options.)*      
+  
+##### Copyright (C) 2014, Ian Sutton (<ian@kremlin.cc>)
+# Original Readme: 
+  this section explains workflow/structuring habits 
+
+
+ && saves time. ideally, this file will be deleted before "release"
+and all files will follow standard protocol/KNF. 
+ 
 ------------------------------------------------------------------------
 FILESYSTEM
 
